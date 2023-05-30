@@ -112,13 +112,14 @@ h5 a{
 
 .cards:hover {
     box-shadow: 0px 5px 10px rgba(128, 128, 128, 0.371);
-    transition: ease 0.2s;
-    translate: 0px -10px;
 }
 
 .del {
     text-decoration: line-through;
     color: var(--grey);
+}
+.de{
+    font-size: 16px;
 }
 
 .checks {
@@ -127,8 +128,9 @@ h5 a{
     color: var(--black);
     padding: 25px 10px;
 }
-input{
-    font-size: 30px;
+input[type=checkbox]{
+    width: 20px;
+    height: 20px;
 }
 
 
@@ -152,17 +154,13 @@ input{
     margin-top: 15%;
     text-align: center;
     padding: 5px 10px;
+    border-radius: 10px;
 }
 
 .addnewtask-heading {
     float: left;
     border-bottom: 2px solid var(--skyblue);
     color: var(--black);
-}
-
-.addnewtask-heading:hover {
-    letter-spacing: 2px;
-    transition: 0.3s ease-out;
 }
 
 .cross {
@@ -204,6 +202,7 @@ input{
     width: 100%;
     margin: 20px 0px;
     padding: 12px 20px;
+    background-color: rgb(239, 239, 247);
 }
 
 .addTaskbtn {
@@ -266,6 +265,7 @@ input{
 .page4{
     height: 600px;
 }
+
 @media only screen and (max-width:1200px) and (min-width:340px){
     body{
         width: 700px;
